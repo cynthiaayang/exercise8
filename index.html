@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8: Responsive Web Design</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
+    <style>
+        /* General Styling */
+        body {
+            font-family: "Pacifico", cursive;
+            font-size: 1em; /* Default text size */
+            background-color: aqua;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, p, ul, img {
+            margin-left: 0;
+        }
+
+        h1 {
+            font-family: "Roboto", sans-serif;
+            font-size: 2em;
+            background-color: black;
+            color: white;
+            padding: 0.375em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: "Roboto", sans-serif;
+            font-size: 1.5em;
+            background-color: black;
+            color: white;
+            display: inline-block;
+            padding: 0.375em;
+            margin-top: 0;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: yellow;
+        }
+
+        ul a {
+            color: magenta;
+            text-decoration: none;
+        }
+
+        p {
+            background-color: #eee;
+            opacity: 0.9;
+            font-weight: lighter;
+            padding: 1em;
+            margin: 20px 0;
+            max-width: 600px; /* Desktop paragraph width */
+        }
+
+        img {
+            max-width: 800px; /* Desktop image width */
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Mobile View */
+        @media (max-width: 600px) {
+            body {
+                background-color: yellow;
+                font-size: 0.75em; /* Reduce text size to 75% */
+            }
+
+            p, img {
+                width: 100%; /* Full width for images and paragraphs */
+                font-size: 1em; /* Adjusted for relative scaling */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Smaller heading for mobile */
+            }
+
+            h2 {
+                font-size: 1em; /* Smaller section heading for mobile */
+            }
+        }
+
+        /* Desktop View */
+        @media (min-width: 601px) {
+            body {
+                background-color: aqua;
+            }
+
+            p {
+                max-width: 600px; /* Restrict paragraph width */
+            }
+
+            img {
+                max-width: 800px; /* Restrict image width */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a One Page Website...</h1>
+    <p>...and we're going to design a desktop and a mobile view for it!</p>
+    <h2>Table of Contents:</h2>
+    <ul>
+        <li><a href="#One">One</a></li>
+        <li><a href="#Two">Two</a></li>
+        <li><a href="#Three">Three</a></li>
+        <li><a href="#Four">Four</a></li>
+    </ul>
+    <h2 id="One">One</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tortor nulla, efficitur a faucibus ac, vehicula vel nunc. Phasellus urna nisi, scelerisque sed eros ut, pellentesque ornare nisi. Nulla fermentum risus eu elementum imperdiet.</p>
+    <h2 id="Two">Two</h2>
+    <p>Integer in elit ut odio vestibulum sagittis a quis elit. Nam eget imperdiet dui. Cras consectetur nisi non ex laoreet consectetur sed a arcu. Integer non venenatis eros. Donec vel sem vel sem viverra ornare.</p>
+    <h2 id="Three">Three</h2>
+    <img src="https://i.imgur.com/hvm8Jc1.jpg" alt="A black and white cat lounging on a deck">
+    <p>Fusce leo leo, maximus vel urna ut, egestas ultricies massa. Fusce faucibus, dolor auctor lacinia iaculis, lorem mi consequat enim, nec dignissim tortor lorem at nisi.</p>
+    <h2 id="Four">Four</h2>
+    <p>Morbi vestibulum massa vitae tortor vehicula rhoncus. Duis ac orci rhoncus, consectetur justo at, faucibus lacus. Nunc sit amet dolor sed neque scelerisque congue vel at nisi.</p>
+</body>
+</html>
+
